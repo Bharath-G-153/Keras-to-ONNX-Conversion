@@ -1,6 +1,7 @@
 # Tensorflow-to-ONNX-Conversion
 Conversion Pytorch/Keras/Tensorflow into ONNX model format using tflite(sparse) conversion.
-Here we are using the tensorflow lite to convert the following tflite model into onnx model format and then
+Here we are using the tensorflow lite to convert the following tflite model into onnx model format and then use the following model in Unity.
+
 ## About the project
 
 First the following model is created using Python and then the Python inference is being used to convert the following into the required 
