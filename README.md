@@ -1,14 +1,15 @@
-# Keras-to-ONNX-Conversion
-Conversion Pytorch/Keras/Tensorflow into ONNX model format using ResNet50
+# Tensorflow-to-ONNX-Conversion
+Conversion Pytorch/Keras/Tensorflow into ONNX model format using tflite(sparse) conversion.
+Here we are using the tensorflow lite to convert the following tflite model into onnx model format and then
 ## About the project
 
 First the following model is created using Python and then the Python inference is being used to convert the following into the required 
-Conversion of the Pytorch/Tensorflow/keras model into ONNX format and then implement the face detection and face recognition in Unity. Keras models can be converted into unity using the keras2onnx package. Here the MCNN python inference is being used for the conversion. For the following conversion into the required package.
+Conversion of the Pytorch/Tensorflow/keras model into ONNX format and then implement the face detection and face recognition in Unity. Keras models can be converted into unity using the tensorflow2onnx package. Here the MCNN python inference is being used for the conversion. For the following conversion into the required package.
 Installing the Barracuda package in order to implement the following ONNX model in Unity and then use it as an inference. 
 
 Using OpenCV dependencies for the face detection and face recognition which is used to represent the features of the face and bounding boxes to define the boundaries.
 
-Conversion of model to the ResNet model. ResNet models perform image classification - they take images as input and classify the major object in the image into a set of pre-defined classes. They are trained on ImageNet dataset which contains images from 1000 classes. ResNet models provide very high accuracies with affordable model sizes. They are ideal for cases when high accuracy of classification is required.
+Conversion of model to the ResNet model. ResNet models perform image classification - they take images as input and classify the major object in the image into a set of pre-defined classes. They are trained on ImageNet dataset which contains images from 1000 classes. Tflite models provide very high accuracies with affordable model sizes. They are ideal for cases when high accuracy of classification is required.
 
 ## Barracuda 
 The Barracuda package is a lightweight cross-platform neural network inference library for Unity.
@@ -31,7 +32,7 @@ tflite conversion for Python Level API and then converting into tensorflow lite 
 ### Pre-requisites and Installation
 1) Run the train.py
 2) Run the detect.py(test)
-3)To convert h5 to ONNX, run keras2onnx-example-master/convert_keras_to_onnx.py
+3) Convert h5 to ONNX
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the necessary packages.
 
